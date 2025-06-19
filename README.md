@@ -215,12 +215,12 @@ graph TD
     tools -->|Tool messages exist| llm
     tools -->|No tool messages| END[End]
     
-    classDef default fill:#f9f9f9,stroke:#333,stroke-width:1px;
-    classDef active fill:#d4f4ff,stroke:#333,stroke-width:1px;
-    classDef end fill:#ffcccc,stroke:#333,stroke-width:1px;
+    classDef default fill:#f9f9f9,stroke:#333,stroke-width:1px
+    classDef active fill:#d4f4ff,stroke:#333,stroke-width:1px
+    classDef endNode fill:#ffcccc,stroke:#333,stroke-width:1px
     
-    class human,llm,tools active;
-    class END end;
+    class human,llm,tools active
+    class END endNode
 ```
 
 The workflow consists of three main nodes:
@@ -475,12 +475,12 @@ graph TD
     tools -->|ツールメッセージが存在する| llm
     tools -->|ツールメッセージがない| END[終了]
     
-    classDef default fill:#f9f9f9,stroke:#333,stroke-width:1px;
-    classDef active fill:#d4f4ff,stroke:#333,stroke-width:1px;
-    classDef end fill:#ffcccc,stroke:#333,stroke-width:1px;
+    classDef default fill:#f9f9f9,stroke:#333,stroke-width:1px
+    classDef active fill:#d4f4ff,stroke:#333,stroke-width:1px
+    classDef endNode fill:#ffcccc,stroke:#333,stroke-width:1px
     
-    class human,llm,tools active;
-    class END end;
+    class human,llm,tools active
+    class END endNode
 ```
 
 このワークフローは3つの主要ノードで構成されています：
