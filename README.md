@@ -204,6 +204,34 @@ The workflow is implemented using three main components:
 - **Tool Registry**: Managing available tools and their execution
 - **Graph Structure**: Defining the flow between nodes with conditional edges
 
+### LangGraph Workflow Diagram
+
+The following diagram illustrates the LangGraph workflow implemented in this project:
+
+```mermaid
+graph TD
+    human[Human Node] --> llm[LLM Node]
+    llm --> tools[Tools Node]
+    tools -->|Tool messages exist| llm
+    tools -->|No tool messages| END[End]
+    
+    classDef default fill:#f9f9f9,stroke:#333,stroke-width:1px;
+    classDef active fill:#d4f4ff,stroke:#333,stroke-width:1px;
+    classDef end fill:#ffcccc,stroke:#333,stroke-width:1px;
+    
+    class human,llm,tools active;
+    class END end;
+```
+
+The workflow consists of three main nodes:
+1. **Human Node**: Processes user input and adds it to the conversation state
+2. **LLM Node**: The LLM processes the input and decides whether to use tools
+3. **Tools Node**: Executes the appropriate tools if needed
+
+The conditional edge from the Tools Node determines whether to:
+- Return to the LLM Node if tool messages exist (to process tool results)
+- End the workflow if no tool messages were generated
+
 ## Learning Points
 
 This project demonstrates several key concepts in agentic AI:
@@ -435,6 +463,34 @@ GitHubリポジトリのURLを入力していただければ、そのリポジ�
 - **状態管理**：Pydanticモデルを使用して会話状態を追跡
 - **ツールレジストリ**：利用可能なツールとその実行を管理
 - **グラフ構造**：条件付きエッジを持つノード間のフローを定義
+
+### LangGraphワークフロー図
+
+以下の図は、このプロジェクトで実装されているLangGraphワークフローを示しています：
+
+```mermaid
+graph TD
+    human[Humanノード] --> llm[LLMノード]
+    llm --> tools[Toolsノード]
+    tools -->|ツールメッセージが存在する| llm
+    tools -->|ツールメッセージがない| END[終了]
+    
+    classDef default fill:#f9f9f9,stroke:#333,stroke-width:1px;
+    classDef active fill:#d4f4ff,stroke:#333,stroke-width:1px;
+    classDef end fill:#ffcccc,stroke:#333,stroke-width:1px;
+    
+    class human,llm,tools active;
+    class END end;
+```
+
+このワークフローは3つの主要ノードで構成されています：
+1. **Humanノード**：ユーザー入力を処理し、会話状態に追加します
+2. **LLMノード**：LLMが入力を処理し、ツールを使用するかどうかを決定します
+3. **Toolsノード**：必要に応じて適切なツールを実行します
+
+Toolsノードからの条件付きエッジは以下を決定します：
+- ツールメッセージが存在する場合はLLMノードに戻る（ツール結果を処理するため）
+- ツールメッセージが生成されなかった場合はワークフローを終了する
 
 ## 学習ポイント
 
