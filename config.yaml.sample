@@ -1,0 +1,15 @@
+# OpenAI API設定
+openai_api_key: "sk-your-api-key-here"  # ここに実際のAPIキーを入力してください
+
+# モデル設定
+model: "gpt-4o-mini"  # 使用するモデル
+max_tokens: 1000      # 最大トークン数
+temperature: 0.7      # 温度（創造性の度合い）
+
+# リトライ設定
+max_retries: 3        # 最大リトライ回数
+retry_delay: 2        # 初期リトライ間隔（秒）
+backoff_factor: 2     # バックオフ係数
+
+# データ保存設定
+data_dir: "./data"    # データ保存ディレクトリ
