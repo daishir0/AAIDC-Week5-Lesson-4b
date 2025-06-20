@@ -1,6 +1,6 @@
 # Custom Tools, Custom Powers: GitHub Repository Security Audit Tool (AAIDC-Week5-Lesson-4b)
 
-This project is part of the AAIDC course assignment: [Custom Tools, Custom Powers: Extending Your Agent's Capabilities](https://app.readytensor.ai/publications/hHwXrjkLnNaD)
+This project is part of the AAIDC course assignment: [Custom Tools, Custom Powers: Extending Your Agent's Capabilities](https://app.readytensor.ai/publications/custom-tools-custom-powers-extending-your-agents-capabilities-pcFgUEFJjkzC)
 
 ## Overview
 
@@ -260,7 +260,7 @@ This project is based on the AAIDC course material by Ready Tensor.
 
 # カスタムツール、カスタムパワー：GitHubリポジトリセキュリティ監査ツール (AAIDC-Week5-Lesson-4b)
 
-このプロジェクトはAAIDCコースの課題の一部です：[Custom Tools, Custom Powers: Extending Your Agent's Capabilities](https://app.readytensor.ai/publications/hHwXrjkLnNaD)
+このプロジェクトはAAIDCコースの課題の一部です：[Custom Tools, Custom Powers: Extending Your Agent's Capabilities](https://app.readytensor.ai/publications/custom-tools-custom-powers-extending-your-agents-capabilities-pcFgUEFJjkzC)
 
 ## 概要
 
